@@ -3,7 +3,6 @@ image: gitlab-registry.glispa.com/java/maven-builder
 stages:
   - test
   - deploy
-  - release
 
 Test:
   services:
@@ -32,16 +31,3 @@ Deploy Snapshot:
     - mvn -B -U clean deploy -DskipTests
   only:
     - master
-
-Release:
-  when: manual
-  variables:
-    GIT_STRATEGY: clone
-  stage: release
-  script:
-    - git checkout -B "$CI_BUILD_REF_NAME"
-    - mvn -B release:clean release:prepare release:perform -Darguments="-DskipTests"
-  only:
-    - master
-  except:
-    - tags
