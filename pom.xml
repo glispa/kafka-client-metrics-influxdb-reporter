@@ -4,7 +4,7 @@
 
     <groupId>com.glispa</groupId>
     <artifactId>kafka-client-metrics-influxdb-reporter</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <packaging>jar</packaging>
 
     <name>Kafka-client-metrics-influxdb-reporter</name>
@@ -31,7 +31,7 @@
         <connection>scm:git:https://github.com/glispa/kafka-client-metrics-influxdb-reporter</connection>
         <developerConnection>scm:git:https://github.com/glispa/kafka-client-metrics-influxdb-reporter</developerConnection>
         <url>scm:git:https://github.com/glispa/kafka-client-metrics-influxdb-reporter</url>
-        <tag>HEAD</tag>
+        <tag>0.0.3</tag>
     </scm>
 
     <properties>
