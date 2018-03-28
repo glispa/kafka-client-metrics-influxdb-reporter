@@ -22,12 +22,11 @@ Test:
   stage: test
   script:
     - mvn -B -U clean test -Dkafka.host=kafka -Dinfluxdb.host=influxdb
-  except:
-    - tags
 
-Deploy Snapshot:
+Deploy:
   stage: deploy
   script:
     - mvn -B -U clean deploy -DskipTests
   only:
     - master
+    - tags
