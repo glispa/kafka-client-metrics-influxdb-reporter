@@ -1,4 +1,4 @@
-image: gitlab-registry.glispa.com/java/maven-builder
+image: gitlab-registry.glispa.com/glispa/utils/maven-builder
 
 stages:
   - test
